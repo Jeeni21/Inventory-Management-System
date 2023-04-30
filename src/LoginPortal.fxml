@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <StackPane layoutY="-7.0" prefHeight="111.0" prefWidth="459.0" style="-fx-background-color: BISQUE;">
+         <children>
+            <Label text="Login Portal">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <Separator layoutY="94.0" prefHeight="19.0" prefWidth="459.0" style="-fx-border-color: GREEN; -fx-background-color: green;" />
+      <ImageView fitHeight="399.0" fitWidth="461.0" layoutX="-3.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="158.0" text="Username:" textFill="#f3f7e9">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="uName" layoutX="34.0" layoutY="196.0" prefHeight="26.0" prefWidth="301.0" promptText="Enter your username here" />
+      <Label layoutX="26.0" layoutY="240.0" text="Password:" textFill="#35382c">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Pass" layoutX="33.0" layoutY="279.0" prefHeight="26.0" prefWidth="302.0" promptText="Enter your password here" />
+      <Button layoutX="34.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="37.0" prefWidth="84.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="225.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="38.0" prefWidth="84.0" text="Cancel" />
+   </children>
+</AnchorPane>

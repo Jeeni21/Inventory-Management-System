@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SearchController">
+   <children>
+      <StackPane layoutX="-7.0" prefHeight="95.0" prefWidth="606.0" style="-fx-background-color: BISQUE;">
+         <children>
+            <Label text="Search Items">
+               <font>
+                  <Font name="Consolas" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <Separator layoutX="1.0" layoutY="94.0" prefHeight="10.0" prefWidth="600.0" style="-fx-background-color: GREEN;" />
+      <Label layoutX="22.0" layoutY="146.0" text="Enter Item ID to search:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtid" layoutX="206.0" layoutY="146.0" prefHeight="10.0" prefWidth="152.0" promptText="eg. 115" />
+      <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="365.0" layoutY="147.0" onMouseClicked="#SearchItems" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@search.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="displaylbl" layoutX="6.0" layoutY="208.0" prefHeight="178.0" prefWidth="578.0" />
+   </children>
+</AnchorPane>
