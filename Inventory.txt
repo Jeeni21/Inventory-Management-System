@@ -1,0 +1,10 @@
+Inventory Reports
+-----------------
+
+Total items: 2
+
+Item		Quantity	Price	ID
+----		--------	-----
+Body Wash	44		5.63	116
+ Shampoo	45		2.30	112
+ 
